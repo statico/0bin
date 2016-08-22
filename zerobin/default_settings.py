@@ -70,7 +70,7 @@ MENU = (
 
 # limit size of pasted text in bytes. Be careful allowing too much size can
 # slow down user's browser
-MAX_SIZE = 1024 * 500
+MAX_SIZE = 1024 * 1024
 
 # length of base64-like paste-id string in the url, int from 4 to 27 (length of sha1 digest)
 # total number of unique pastes can be calculated as 2^(6*PASTE_ID_LENGTH)
