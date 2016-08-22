@@ -655,27 +655,27 @@
         setTimeout(function () {
 
           /* Setup flash clipboard button */
-          ZeroClipboard.setMoviePath('/static/js/ZeroClipboard.swf');
+          //ZeroClipboard.setMoviePath('/static/js/ZeroClipboard.swf');
 
-          var clip = new ZeroClipboard.Client();
+          //var clip = new ZeroClipboard.Client();
 
           // Callback to reposition the clibpboad flash animation overlay
-          var reposition = function () {
-            clip.reposition();
-          };
+          //var reposition = function () {
+            //clip.reposition();
+          //};
 
-          clip.addEventListener('mouseup', function () {
-            $('#clip-button').text('Copying paste...');
-            clip.setText(zerobin.getPasteContent());
-          });
-          clip.addEventListener('complete', function () {
-            $('#clip-button').text('Copy to clipboard');
-            zerobin.message('info', 'The paste is now in your clipboard', '',
-            true, reposition);
-          });
-          clip.glue('clip-button');
+          //clip.addEventListener('mouseup', function () {
+            //$('#clip-button').text('Copying paste...');
+            //clip.setText(zerobin.getPasteContent());
+          //});
+          //clip.addEventListener('complete', function () {
+            //$('#clip-button').text('Copy to clipboard');
+            //zerobin.message('info', 'The paste is now in your clipboard', '',
+            //true, reposition);
+          //});
+          //clip.glue('clip-button');
 
-          window.onresize = reposition;
+          //window.onresize = reposition;
 
 
           /* Setup link to get the paste short url*/
@@ -683,7 +683,7 @@
             e.preventDefault();
             $('#short-url').text('Loading short url...');
             zerobin.getTinyURL(window.location.toString(), function (tinyurl) {
-              clip.setText(tinyurl);
+              //clip.setText(tinyurl);
               $('#copy-success').hide();
               zerobin.message('success',
                 '<a href="' + tinyurl + '">' + tinyurl + '</a>',
@@ -701,6 +701,7 @@
 
           /** Syntaxic coloration */
 
+          /*
           if (zerobin.isCode(content) > 100) {
             $('#paste-content').addClass('linenums');
             prettyPrint();
@@ -713,6 +714,7 @@
                 '', false, reposition);
             }
           }
+          */
 
           /* Class to switch to paste content style with coloration done */
           $('#paste-content').addClass('done');
