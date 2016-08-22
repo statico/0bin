@@ -140,6 +140,10 @@ def display_paste(paste_id):
 def error404(code):
     return GLOBAL_CONTEXT
 
+@app.route('/robots.txt')
+def serve_robots_txt():
+    return static_file('robots.txt', root=settings.STATIC_FILES_ROOT)
+
 
 @app.route('/static/<filename:path>')
 def server_static(filename):

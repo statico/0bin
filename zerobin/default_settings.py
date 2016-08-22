@@ -46,7 +46,7 @@ TEMPLATE_DIRS = (
 # You can also specify them using the --host and --port script options
 # which have priority on these settings
 HOST = "127.0.0.1"
-PORT = "8000"
+PORT = "7000"
 
 # User and group the server should run as. Set to None if it should be the
 # current user. Some OS don't support it and if so, it will be ignored.
@@ -63,9 +63,9 @@ REFRESH_COUNTER = 60 * 1
 # Any link with "mailto:" will be escaped to prevent spam
 MENU = (
     ('Home', '/'), # internal link. First link will be highlited
-    ('Download 0bin', 'https://github.com/sametmax/0bin'), # external link
-    ('Faq', '/faq/'), # faq
-    ('Contact', 'mailto:your@email.com') # email
+    ('Source', 'https://github.com/sametmax/0bin'), # external link
+    #('Faq', '/faq/'), # faq
+    #('Contact', 'mailto:your@email.com') # email
 )
 
 # limit size of pasted text in bytes. Be careful allowing too much size can

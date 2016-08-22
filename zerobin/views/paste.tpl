@@ -22,12 +22,16 @@
 <div class="well paste-form">
 <form action="/" method="get" accept-charset="utf-8">
 <p class="lnk-option">
+<!--
   <a id="clip-button" href="#">Copy To Clipboard</a> |
   <a id="short-url" href="#">Get short url</a> |
   <a id="email-link" href="#">Email this</a>
+  -->
 
   <span class="paste-option btn-group top">
+  <!--
       <button class="btn btn-clone"><i class="icon-camera"></i>&nbsp;Clone</button>
+      -->
       <button class="btn">New Paste</button>
   </span>
 </p>
@@ -50,7 +54,7 @@
 </p>
 
 <p class="paste-option btn-group bottom">
-    <button class="btn btn-clone"><i class="icon-camera"></i>&nbsp;Clone</button>
+    <!-- <button class="btn btn-clone"><i class="icon-camera"></i>&nbsp;Clone</button> -->
     <button class="btn">New Paste</button>
 </p>
 
@@ -66,7 +70,7 @@
         <option value="burn_after_reading">Burn after reading</option>
         <option selected value="1_day">1 day</option>
         <option value="1_month">1 month</option>
-        <option value="never">Never</option>
+        <!-- <option value="never">Never</option> -->
       </select>
       <button type="submit" class="btn btn-primary">Submit</button>
       <button class="btn btn-danger">Cancel clone</button>
