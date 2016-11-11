@@ -1,0 +1,14 @@
+# temporary, hidden and backup files
+
+*~
+*.bak
+*.log
+*.tmp
+*_index
+*.orig
+*.swp
+.* # all hidden files...
+!.gitignore # ...except gitignore
+
+# others
+content
